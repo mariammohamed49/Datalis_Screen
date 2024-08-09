@@ -21,6 +21,10 @@ import com.mariam.detailsscreen.R
 @Composable
 fun IssueScreen() {
     val githubIssue= listOf(
+
+        GithubIssuesUiMode(title ="Bump pyarrow from 7 and using three parameter",
+            description = "NOEN", createdAt ="Created At : " , state ="Open", date = "2023 -22-9,23:0PM " )
+        ,
         GithubIssuesUiMode(
                     title = "Fix bug in authentication flow",
                     description = "Resolve the issue causing login failures on Android devices.",

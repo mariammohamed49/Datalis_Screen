@@ -4,13 +4,11 @@ import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
-import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.AddCircle
-import androidx.compose.material.icons.filled.ArrowBack
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
@@ -111,7 +109,7 @@ fun IssuesItem (githubIssuesUiMode:GithubIssuesUiMode,) {
 @Composable
 private fun PreviewIssuesItem() {
     IssuesItem(
-        githubIssuesUiMode = GithubIssuesUiMode(title ="Bump pyarrow from 7 ",
+        githubIssuesUiMode = GithubIssuesUiMode(title ="Bump pyarrow from 7 and using three parameter",
          description = "NOEN", createdAt ="Created At : " , state ="Open", date = "2023 -22-9,23:0PM " )
             )
 
