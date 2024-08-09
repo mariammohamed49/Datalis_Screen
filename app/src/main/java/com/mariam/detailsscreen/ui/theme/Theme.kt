@@ -9,30 +9,50 @@ import androidx.compose.material3.dynamicDarkColorScheme
 import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 
 private val DarkColorScheme = darkColorScheme(
-    primary = Purple80,
-    secondary = PurpleGrey80,
-    tertiary = Pink80
+    primary = light_primary,
+    onPrimary = light_onPrimary,
+    inversePrimary = light_inverse_primary,
+    secondary= light_secondary,
+    onSecondary= light_onSecondary,
+    error = light_error,
+    onError = light_onError,
+    background=light_background,
+    onBackground =light_onBackground,
+    surface =light_surface,
+    onSurface =light_onSurface
 )
 
-private val LightColorScheme = lightColorScheme(
-    primary = Purple40,
-    secondary = PurpleGrey40,
-    tertiary = Pink40
+private val lightColorScheme = lightColorScheme(
+    primary = light_primary,
+    onPrimary = light_onPrimary,
+    inversePrimary = light_inverse_primary,
+    secondary= light_secondary,
+    onSecondary= light_onSecondary,
+    error = light_error,
+    onError = light_onError,
+    background=light_background,
+    onBackground =light_onBackground,
+    surface =light_surface,
+    onSurface =light_onSurface,
 
-    /* Other default colors to override
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    onPrimary = Color.White,
-    onSecondary = Color.White,
-    onTertiary = Color.White,
-    //onBackground = Color(0xFF1C1B1F),
-    onBackground = Color(0xFFF5F5F5),
-    onSurface = Color(0xFF1C1B1F),
 
-    */
+
+
+/* Other default colors to override
+background = Color(0xFFFFFBFE),
+surface = Color(0xFFFFFBFE),
+onPrimary = Color.White,
+onSecondary = Color.White,
+onTertiary = Color.White,
+//onBackground = Color(0xFF1C1B1F),
+onBackground = Color(0xFFF5F5F5),
+onSurface = Color(0xFF1C1B1F),
+
+*/
 )
 
 @Composable
@@ -49,7 +69,7 @@ fun DetailsScreenTheme(
         }
 
         darkTheme -> DarkColorScheme
-        else -> LightColorScheme
+        else -> lightColorScheme
     }
 
     MaterialTheme(

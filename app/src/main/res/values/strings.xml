@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DetailsScreen</string>
+    <string name="details_app_bar_back_arrow_description">Back</string>
+    <string name="issue_circle_description">Circle</string>
+    <string name="issue_screen_title">Issues</string>
+
 </resources>

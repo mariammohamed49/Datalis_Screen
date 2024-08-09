@@ -3,26 +3,19 @@ package com.mariam.detailsscreen
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
-import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.mariam.detailsscreen.ui.theme.DetailsScreen
-import com.mariam.detailsscreen.ui.theme.DetailsScreenTheme
+import androidx.compose.material3.ExperimentalMaterial3Api
+import com.mariam.detailsscreen.githubreposapp.presentation.screens.DetailsScreen
+import com.mariam.detailsscreen.issues_screen.AppBar
+import com.mariam.detailsscreen.issues_screen.IssueScreen
 
 class MainActivity : ComponentActivity() {
+    @ExperimentalMaterial3Api
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            DetailsScreen()
-
-
+            IssueScreen()
         }
-            }
-        }
+    }
+}
 
 

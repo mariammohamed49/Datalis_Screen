@@ -1,6 +1,6 @@
 @file:OptIn(ExperimentalMaterial3Api::class)
 
-package com.mariam.detailsscreen.ui.theme
+package com.mariam.detailsscreen.githubreposapp.presentation.screens
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -17,9 +17,6 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ArrowBack
-import androidx.compose.material.icons.filled.Home
-import androidx.compose.material.icons.filled.Info
-import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.Button
 import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -39,11 +36,13 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.mariam.detailsscreen.R
+import com.mariam.detailsscreen.ui.theme.lightGray
 
 
 //@OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun DetailsScreen () {    Scaffold(
+fun DetailsScreen () {
+    Scaffold(
     topBar = {
         TopAppBar(
             title = {
@@ -75,7 +74,7 @@ fun DetailsScreen () {    Scaffold(
             .fillMaxSize()
             .padding(it)
             .padding(10.dp)
-            .background(LightGray)
+            .background(color = lightGray)
     ) {
         Spacer(modifier = Modifier.height(32.dp))
         Image(
@@ -86,15 +85,11 @@ fun DetailsScreen () {    Scaffold(
             .clip(RoundedCornerShape(150.dp))
         )
         Spacer(modifier = Modifier.height(16.dp))
-
-
         Text(
             text = "language",
             fontSize = 24.sp,
             fontWeight = FontWeight.Bold ,
             modifier = Modifier.align(Alignment.CenterHorizontally)
-
-
         )
 
         Spacer(modifier = Modifier.height(16.dp))
@@ -104,6 +99,7 @@ fun DetailsScreen () {    Scaffold(
         ) {
             Spacer(modifier = Modifier.width(80.dp))
             Text(text = "1400",fontSize = 17.sp)
+
             Spacer(modifier = Modifier.width(5.dp))
             Image(
                 painter = painterResource(id = R.drawable.star),
