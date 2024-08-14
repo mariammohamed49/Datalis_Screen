@@ -3,5 +3,11 @@
     <string name="details_app_bar_back_arrow_description">Back</string>
     <string name="issue_circle_description">Circle</string>
     <string name="issue_screen_title">Issues</string>
+    <string name="repository_screen_title">Github Repositories</string>
+    <string name="github_reposities_screen_title">Github Repositories</string>
+    <string name="repository_screen_error_image_description">error image</string>
+    <string name="cause_of_error">Something Went Wrong because you have some error</string>
+    <string name="details_cause_of_error">Network Error</string>
+    <string name="retry_please" >RETRY</string>
 
 </resources>

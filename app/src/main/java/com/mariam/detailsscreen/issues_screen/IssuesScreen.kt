@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material3.ExperimentalMaterial3Api
@@ -81,8 +82,9 @@ fun IssueScreen() {
         .background(MaterialTheme.colorScheme.background))
     {
         AppBar(title = stringResource(id = R.string.issue_screen_title),
+            titleStyle = MaterialTheme.typography.titleLarge,
            showBackArrow = true,
-           modifier = Modifier .fillMaxWidth()
+           modifier = Modifier .size(50.dp)
             )
         LazyColumn(
             modifier = Modifier.padding(horizontal = 8.dp)
